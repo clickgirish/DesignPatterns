@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral.Strategy.Consumer", "DesignPatterns.Behavioral.Strategy.Consumer\DesignPatterns.Behavioral.Strategy.Consumer.csproj", "{17FD40B5-1DED-4FE1-BECA-87583E1B185E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Behavioral.Strategy.Consumer", "DesignPatterns.Behavioral.Strategy.Consumer\DesignPatterns.Behavioral.Strategy.Consumer.csproj", "{17FD40B5-1DED-4FE1-BECA-87583E1B185E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Behavioral.Strategy", "DesignPatterns.Behavioral.Strategy\DesignPatterns.Behavioral.Strategy.csproj", "{BBCBF456-BB85-4714-AB86-62096C660722}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Behavioral.Strategy", "DesignPatterns.Behavioral.Strategy\DesignPatterns.Behavioral.Strategy.csproj", "{BBCBF456-BB85-4714-AB86-62096C660722}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{0BB3FCB7-454B-4FED-92AD-EFEB826A480D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17FD40B5-1DED-4FE1-BECA-87583E1B185E} = {0BB3FCB7-454B-4FED-92AD-EFEB826A480D}
+		{BBCBF456-BB85-4714-AB86-62096C660722} = {0BB3FCB7-454B-4FED-92AD-EFEB826A480D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1C487A2-3BAA-4072-BE29-D8312A1EB606}

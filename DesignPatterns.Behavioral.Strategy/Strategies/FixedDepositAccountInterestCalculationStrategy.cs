@@ -10,7 +10,7 @@ namespace DesignPatterns.Behavioral.Strategy.Strategies
     {
         public decimal CalculateInterest()
         {
-            // logic for calculating interest specific to Savings Account.
+            // logic for calculating interest specific to Fixed Deposit Account.
             return 3.3M;
         }
     }

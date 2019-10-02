@@ -11,13 +11,14 @@ namespace DesignPatterns.Persistence.RepositoryPattern.Consumer
             using (var unitOfWork = new UnitOfWork(new Models.BankAccountsDBContext()))
             {
                 var customersWithoutKyc = unitOfWork.CustomerRepository.GetCustomersWithoutKYC();
-
-                unitOfWork.Complete();
-
+                
                 foreach (var customer in customersWithoutKyc)
                 {
+                    customer.FirstName = $"{customer.FirstName} - UPDATED";
                     Console.WriteLine(customer.FirstName);
                 }
+
+                unitOfWork.Complete();
             }
 
             Console.Read();

@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 
 namespace DesignPatterns.Creational.Singleton.Consumer
 {
+    class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Getting 3 instances of normal logger at an interval 3 seconds.");
             var logger1 = Logger.GetLogger();
             System.Threading.Thread.Sleep(3000);
             var logger2 = Logger.GetLogger();
